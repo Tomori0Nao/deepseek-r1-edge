@@ -1,5 +1,5 @@
 'use client';
-
+import 'katex/dist/katex.min.css';
 import React, {
   useState,
   useRef,
