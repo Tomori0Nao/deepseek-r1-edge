@@ -155,7 +155,7 @@ export async function onRequest({ request, params, env }: any) {
     const res = await AI.chatCompletions({
       model: '@tx/deepseek-ai/deepseek-r1-distill-qwen-32b',
       messages: messages,
-      stream: true,
+      stream: false,
     });
 
     return new Response(res, {
